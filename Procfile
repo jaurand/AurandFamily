@@ -1,1 +1,1 @@
-web: node /AurandFamily/app.js
+web: node AurandFamily/app.js
