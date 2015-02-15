@@ -3,10 +3,9 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function (req, res) {
-    Test.findAll().then(function (tests) {
-        console.log(test);
+    global.db.Test.findAll().then(function (tests) {
+        res.json(tests);
     });
-    res.render('index', { title: 'Express' });
 });
 
 module.exports = router;

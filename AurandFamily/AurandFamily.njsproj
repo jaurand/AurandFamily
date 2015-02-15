@@ -31,13 +31,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="models\index.js" />
+    <Compile Include="models\test.js" />
     <Compile Include="routes\index.js" />
+    <Compile Include="routes\test.js" />
+    <Content Include="config\config.json" />
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Content Include="views\error.jade" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
+    <Folder Include="models\" />
+    <Folder Include="config\" />
     <Folder Include="public\" />
     <Folder Include="routes\" />
     <Folder Include="views\" />
