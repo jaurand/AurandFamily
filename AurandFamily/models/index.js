@@ -9,9 +9,13 @@
     if (process.env.HEROKU_POSTGRESQL_BRONZE_URL) {
         // the application is executed on Heroku ... use the postgres database
         //var match = process.env.HEROKU_POSTGRESQL_VIOLET_URL.match(/postgres:\/\/([^:]+):([^@]+)@([^:]+):(\d+)\/(.+)/)
+        console.log('///////////////////////////////////////////////////////');
+        console.log(process.env.HEROKU_POSTGRESQL_VIOLET_URL);
+        console.log('///////////////////////////////////////////////////////');
         
         sequelize = new Sequelize(process.env.HEROKU_POSTGRESQL_VIOLET_URL);
     } else {
+        console.log('here');
         // the application is executed on the local machine ... use mysql
         sequelize = new Sequelize('aurand', 'postgres', 'password', { host: 'localhost', dialect: 'postgres' });
     }
