@@ -6,7 +6,7 @@
     var Sequelize = require('sequelize'), 
         sequelize = null;
     
-    if (process.env.HEROKU_POSTGRESQL_BRONZE_URL) {
+    if (process.env.HEROKU_POSTGRESQL_VIOLET_URL) {
         // the application is executed on Heroku ... use the postgres database
         //var match = process.env.HEROKU_POSTGRESQL_VIOLET_URL.match(/postgres:\/\/([^:]+):([^@]+)@([^:]+):(\d+)\/(.+)/)
         console.log('///////////////////////////////////////////////////////');
